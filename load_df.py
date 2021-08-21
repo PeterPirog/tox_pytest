@@ -1,14 +1,22 @@
-#%%
+# %%
 import pandas as pd
+
 pd.set_option('display.max_columns', None)
 
+
 def load_train_df():
-    df=pd.read_csv('train.csv')
+    df = pd.read_csv('train.csv')
     return df
 
-#%%
+
+def load_test_df():
+    df = pd.read_csv('test.csv')
+    return df
+
+
+# %%
 if __name__ == '__main__':
-    df=load_train_df()
-    #print(df.head)
-#%%
+    df = load_train_df()
+    # print(df.head)
+    # %%
     print(df.describe())
